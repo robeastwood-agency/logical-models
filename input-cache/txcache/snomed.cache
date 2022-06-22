@@ -1,0 +1,225 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "288524001"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Courses",
+  "code" : "288524001",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "288524001"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
+      "valueBoolean" : true
+    }],
+    "identifier" : "urn:uuid:5769bc40-aba1-4198-873f-a334bcd3e9f1",
+    "timestamp" : "2022-06-22T00:34:41.343Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "288524001",
+      "display" : "Courses"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7087005",
+      "display" : "Intermittent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "13550009",
+      "display" : "Chronic miliary"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "14803004",
+      "display" : "Transitory"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "18131002",
+      "display" : "Acute fulminating"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "19939008",
+      "display" : "Subacute"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "21864008",
+      "display" : "Seasonal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "25649003",
+      "display" : "Chronic migratory"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "26593000",
+      "display" : "Paroxysmal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "39196007",
+      "display" : "Chronic aggressive"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "44180009",
+      "display" : "Cyclic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "47501007",
+      "display" : "Chronic active"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "50188003",
+      "display" : "Chronic granulomatous"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "61751001",
+      "display" : "Gradual onset"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "62459000",
+      "display" : "Chronic persistent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "90734009",
+      "display" : "Chronic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255212004",
+      "display" : "Acute-on-chronic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255227004",
+      "display" : "Recurrent"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255228009",
+      "display" : "Recurrent acute"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255299009",
+      "display" : "Brittle course"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255314001",
+      "display" : "Progressive"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255318003",
+      "display" : "Relapsing course"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255319006",
+      "display" : "Remitting"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255341006",
+      "display" : "Fluctuating"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "263730007",
+      "display" : "Continual"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "264498007",
+      "display" : "Cyclical relapsing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "278499009",
+      "display" : "Episodic"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "373933003",
+      "display" : "Acute onset (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "373935005",
+      "display" : "Subacute onset (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "385315009",
+      "display" : "Sudden onset"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "424124008",
+      "display" : "Sudden onset AND/OR short duration (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "424572001",
+      "display" : "Clinical course with short duration (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "425323003",
+      "display" : "Sudden onset AND short duration (qualifier value)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "702322003",
+      "display" : "Non-progressive"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "788800008",
+      "display" : "Delayed onset (qualifier value)"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

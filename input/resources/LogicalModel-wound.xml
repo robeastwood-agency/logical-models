@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="wound"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/wound"/>
+  <version value="0.0.1"/>
+  <name value="WoundLogicalModel"/>
+  <title value="Wound Logical Model"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="This logical model describes the concepts related to a wound condition."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xa;&#xa;This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xa;&#xa;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xa;&#xa;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xa;&#xa;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="true"/>
+  <type value="http://ns.electronichealth.net.au/fhir/StructureDefinition/Wound"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="Wound">
+      <path value="Wound"/>
+      <short value="Wound logical model"/>
+      <definition value="A wound is any damage or break in the surface of the skin."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="Wound.subject">
+      <path value="Wound.subject"/>
+      <short value="Person who is suffering the wound"/>
+      <definition value="TBD"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+    </element>
+    <element id="Wound.clinicalStatus">
+      <path value="Wound.clinicalStatus"/>
+      <short value="Whether the wound is active or resolved"/>
+      <definition value="TBD"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-clinical"/>
+      </binding>
+    </element>
+    <element id="Wound.type">
+      <path value="Wound.type"/>
+      <short value="General classification of wound type"/>
+      <definition
+        value="Examples include traumatic, spontaneous, pressure injury, neuropathic ulcer, autoimmune ulcer, venous ulcer, arterial ulcer, burn."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <description value="Example LOINC value set for types of wounds"/>
+        <valueSet value="http://loinc.org/vs/LL2215-3"/>
+      </binding>
+    </element>
+    <element id="Wound.chronicityClassification">
+      <path value="Wound.chronicityClassification"/>
+      <short value="acute or chronic"/>
+      <definition value="The duration of the wound - acute or chronic"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <description value="Demo value set for representing the chronicity of a condtion"/>
+        <valueSet
+          value="http://ns.electronichealth.net.au/fhir/ValueSet/chronicity-classification-1"/>
+      </binding>
+    </element>
+    <element id="Wound.bodyLocation">
+      <path value="Wound.bodyLocation"/>
+      <short value="Body site of the wound"/>
+      <definition value="The body site on which the wound is located"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
+      </binding>
+    </element>
+    <element id="Wound.aetiology">
+      <path value="Wound.aetiology"/>
+      <short value="Cause(s) of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <description value="Example LOINC value set for aetiology of wound"/>
+        <valueSet value="http://loinc.org/vs/LL4936-2"/>
+      </binding>
+    </element>
+    <element id="Wound.influencingFactor">
+      <path value="Wound.influencingFactor"/>
+      <short value="Factors negatively influencing the wound"/>
+      <definition
+        value="Co-morbidities or other factors such as poor nutrition, impaired mobility or depression that can have a negative impact upon the person's wound."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1"/>
+      </binding>
+    </element>
+    <element id="Wound.duration">
+      <path value="Wound.duration"/>
+      <definition value="TBD"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Wound.duration.onset">
+      <path value="Wound.duration.onset"/>
+      <short value="Onset date"/>
+      <definition
+        value="The date when the wound was first experienced by the person (or representative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+      </type>
+    </element>
+    <element id="Wound.duration.resolved">
+      <path value="Wound.duration.resolved"/>
+      <short value="Resolution date"/>
+      <definition value="The date when the wound was assessed as being resolved."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+      </type>
+    </element>
+    <element id="Wound.assessedCharacteristics">
+      <path value="Wound.assessedCharacteristics"/>
+      <short value="Oft repeated assessed characteristics of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+    <element id="Wound.management">
+      <path value="Wound.management"/>
+      <short value="Wound management"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,16 @@
+{
+  "package-id": "rob.logical.fhir.ig.01",
+  "canonical": "http://ns.electronichealth.net.au/fhir",
+  "title": "Rob's Logical Model FHIR Implementation Guide",
+  "category": "Logical Models",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build R4  (latest in version control) - Content subject to frequent changes.",
+      "path": "https://build.fhir.org/ig/robeastwood-agency/logical-models",
+      "status": "ci-build",
+      "fhirversion": "4.0.1",
+      "current": true
+    }
+  ]
+}

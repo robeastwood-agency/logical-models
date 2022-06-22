@@ -1,0 +1,7 @@
+== Suppressed Messages ==
+
+# Terminology not available at HL7 tx server or in package dependency
+The valueSet reference http://loinc.org/vs/LL2215-3 on element Wound.type could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/body-site-1 on element Wound.bodyLocation could not be resolved
+The valueSet reference http://loinc.org/vs/LL4936-2 on element Wound.aetiology could not be resolved
+The valueSet reference https://healthterminologies.gov.au/fhir/ValueSet/clinical-finding-1 on element Wound.influencingFactor could not be resolved
