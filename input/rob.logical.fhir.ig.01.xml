@@ -28,10 +28,10 @@
 
     <resource>
       <reference>
-        <reference value="StructureDefinition/wound"/>
+        <reference value="StructureDefinition/wound-lm"/>
       </reference>
-      <name value="Logical model - wound"/>
-      <description value="Logical model for wound"/>
+      <name value="Wound Condition"/>
+      <description value="Logical model for wound condition"/>
     </resource>
     <resource>
       <reference>
