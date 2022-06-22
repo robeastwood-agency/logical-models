@@ -35,13 +35,19 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/wound-assessment-lm"/>
+      </reference>
+      <name value="Wound Assessment"/>
+      <description value="Logical model for assessed wound characteristics"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/chronicity-classification-1"/>
       </reference>
       <name value="Chronicity Classification Demo"/>
       <description value="Demo value set for representing the chronicity classification of a condtion."/>
     </resource>
     
-
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>

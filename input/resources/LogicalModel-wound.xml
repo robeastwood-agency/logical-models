@@ -180,7 +180,9 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Reference"/>
+        <code value="WoundAssessmentModel"/>
+        <profile
+          value="http://ns.electronichealth.net.au/fhir/StructureDefinition/wound-assessment-lm"/>
       </type>
     </element>
     <element id="WoundConditionModel.management">

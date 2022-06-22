@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="wound-assessment-lm"/>
+  <url value="http://ns.electronichealth.net.au/fhir/StructureDefinition/wound-assessment-lm"/>
+  <version value="0.0.1"/>
+  <name value="WoundAssessmentLogicalModel"/>
+  <title value="Wound Assessment Logical Model"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description
+    value="This logical model describes the concepts related to assessed wound characteristics."/>
+  <copyright
+    value="Copyright © 2022 Australian Digital Health Agency - All rights reserved. Except for the material identified below, this content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/. &#xA;&#xA;This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.&#xA;&#xA;This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO. &#xA;&#xA;The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted. &#xA;&#xA;All copies of this resource must include this copyright statement and all information contained in this statement."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="WoundAssessmentModel"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="WoundAssessmentModel">
+      <path value="WoundAssessmentModel"/>
+      <short value="Wound assessment logical model"/>
+      <definition value="Oft repeated assessed characteristics of the wound."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.overallInterpretation">
+      <path value="WoundAssessmentModel.overallInterpretation"/>
+      <short value="Overall assessement"/>
+      <definition value="Overall assessement of whether the wound is within normal parameters."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
+      </binding>
+    </element>
+    <element id="WoundAssessmentModel.relevantTime">
+      <path value="WoundAssessmentModel.relevantTime"/>
+      <short value="The time that the assessment addresses"/>
+      <definition value="TBD"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
