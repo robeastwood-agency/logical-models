@@ -47,8 +47,8 @@
     </element>
     <element id="WoundConditionModel.clinicalStatus">
       <path value="WoundConditionModel.clinicalStatus"/>
-      <short value="Whether the wound is active or resolved"/>
-      <definition value="TBD"/>
+      <short value="The clinical status of the wound; e.g. active or resolved"/>
+      <definition value="The clinical status of the wound as determined by the clinician."/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -77,9 +77,9 @@
         <valueSet value="http://loinc.org/vs/LL2215-3"/>
       </binding>
     </element>
-    <element id="WoundConditionModel.chronicityClassification">
-      <path value="WoundConditionModel.chronicityClassification"/>
-      <short value="acute or chronic"/>
+    <element id="WoundConditionModel.chronicity">
+      <path value="WoundConditionModel.chronicity"/>
+      <short value="Chronicity classification, e.g. acute or chronic"/>
       <definition value="The duration of the wound - acute or chronic"/>
       <min value="0"/>
       <max value="1"/>
@@ -127,7 +127,7 @@
     </element>
     <element id="WoundConditionModel.influencingFactor">
       <path value="WoundConditionModel.influencingFactor"/>
-      <short value="Factors negatively influencing the wound"/>
+      <short value="Factors negatively influencing the wound; e.g. poor nutrition, impaired mobility"/>
       <definition
         value="Co-morbidities or other factors such as poor nutrition, impaired mobility or depression that can have a negative impact upon the person's wound."/>
       <min value="0"/>
