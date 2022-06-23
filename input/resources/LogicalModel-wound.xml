@@ -213,8 +213,8 @@
         <map value="Condition.abatementDateTime"/>
       </mapping>
     </element>
-    <element id="WoundConditionModel.assessedCharacteristics">
-      <path value="WoundConditionModel.assessedCharacteristics"/>
+    <element id="WoundConditionModel.assessedCharacteristic">
+      <path value="WoundConditionModel.assessedCharacteristic"/>
       <short value="Oft repeated assessed characteristics of the wound"/>
       <definition value="TBD"/>
       <min value="0"/>
