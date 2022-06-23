@@ -1,11 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="chronicity-classification-1"/>
-    <url value="http://ns.electronichealth.net.au/fhir/ValueSet/chronicity-classification-1"/>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:oid:1.2.36.1.2001.1004.201.10028"/>
-    </identifier>
-    <version value="0.0.0"/>
+    <id value="chronicity-classification-demo"/>
+    <url value="http://ns.electronichealth.net.au/fhir/ValueSet/chronicity-classification-demo"/>
+    <version value="0.0.1"/>
     <name value="ChronicityClassificationDemo"/>
     <title value="Chronicity Classification Demo"/>
     <status value="draft"/>

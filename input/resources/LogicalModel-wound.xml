@@ -91,7 +91,7 @@
         <strength value="example"/>
         <description value="Demo value set for representing the chronicity of a condtion"/>
         <valueSet
-          value="http://ns.electronichealth.net.au/fhir/ValueSet/chronicity-classification-1"/>
+          value="http://ns.electronichealth.net.au/fhir/ValueSet/chronicity-classification-demo"/>
       </binding>
     </element>
     <element id="WoundConditionModel.bodyLocation">
@@ -190,7 +190,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Reference"/>
+        <code value="http://ns.electronichealth.net.au/fhir/StructureDefinition/wound-management-lm"/>
       </type>
     </element>
   </differential>

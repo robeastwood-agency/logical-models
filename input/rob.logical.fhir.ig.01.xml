@@ -42,10 +42,18 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/chronicity-classification-1"/>
+        <reference value="StructureDefinition/wound-management-lm"/>
+      </reference>
+      <name value="Wound Management"/>
+      <description value="Logical model for the management and treatment of wounds"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/chronicity-classification-demo"/>
       </reference>
       <name value="Chronicity Classification Demo"/>
-      <description value="Demo value set for representing the chronicity classification of a condtion."/>
+      <description
+        value="Demo value set for representing the chronicity classification of a condtion."/>
     </resource>
     <resource>
       <reference>
@@ -55,7 +63,7 @@
       <description
         value="The Pressure Injury Classification value set includes values that may be used to represent the severity of a pressure injury."/>
     </resource>
-    
+
     <page>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
