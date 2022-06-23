@@ -39,6 +39,7 @@
       <type>
         <code value="Element"/>
       </type>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="FHIR"/>
         <map value="Condition"/>
@@ -54,6 +55,7 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       </type>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="FHIR"/>
         <map value="Condition.subject"/>
@@ -69,6 +71,7 @@
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
+      <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/condition-clinical"/>
@@ -89,6 +92,7 @@
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
+      <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
         <description value="Example LOINC value set for types of wounds"/>
@@ -126,6 +130,7 @@
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
+      <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
         <valueSet value="https://healthterminologies.gov.au/fhir/ValueSet/body-site-1"/>
@@ -187,6 +192,7 @@
         <code value="dateTime"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
       </type>
+      <mustSupport value="true"/>
       <mapping>
         <identity value="FHIR"/>
         <map value="Condition.onsetDateTime"/>
