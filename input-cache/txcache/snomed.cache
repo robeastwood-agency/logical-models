@@ -223,3 +223,147 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1163217004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Pressure injury stage I (disorder)",
+  "code" : "1163217004",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1163220007"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Pressure injury stage II (disorder)",
+  "code" : "1163220007",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1163222004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Pressure injury stage III",
+  "code" : "1163222004",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1163224003"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Pressure injury stage IV (disorder)",
+  "code" : "1163224003",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "723071003"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Pressure injury of deep tissue (disorder)",
+  "code" : "723071003",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "1163226001"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Unstageable pressure injury",
+  "code" : "1163226001",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1163217004",
+        "display" : "Pressure injury stage I"
+      },
+      {
+        "code" : "1163220007",
+        "display" : "Pressure injury stage II"
+      },
+      {
+        "code" : "1163222004",
+        "display" : "Pressure injury stage III"
+      },
+      {
+        "code" : "1163224003",
+        "display" : "Pressure injury stage IV"
+      },
+      {
+        "code" : "723071003",
+        "display" : "Deep tissue pressure injury"
+      },
+      {
+        "code" : "1163226001",
+        "display" : "Unstageable pressure injury"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:ea51346d-8708-4f8c-8183-5dded414a8ef",
+    "timestamp" : "2022-06-23T00:39:23.399Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1163217004",
+      "display" : "Pressure injury stage I"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1163220007",
+      "display" : "Pressure injury stage II"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1163222004",
+      "display" : "Pressure injury stage III"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1163224003",
+      "display" : "Pressure injury stage IV"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "723071003",
+      "display" : "Deep tissue pressure injury"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1163226001",
+      "display" : "Unstageable pressure injury"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

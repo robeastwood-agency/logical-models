@@ -47,6 +47,14 @@
       <name value="Chronicity Classification Demo"/>
       <description value="Demo value set for representing the chronicity classification of a condtion."/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/pressure-injury-classification-demo"/>
+      </reference>
+      <name value="Pressure Injury Classification Demo"/>
+      <description
+        value="The Pressure Injury Classification value set includes values that may be used to represent the severity of a pressure injury."/>
+    </resource>
     
     <page>
       <nameUrl value="toc.html"/>

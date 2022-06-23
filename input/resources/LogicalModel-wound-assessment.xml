@@ -35,6 +35,17 @@
         <code value="Element"/>
       </type>
     </element>
+    <element id="WoundAssessmentModel.relevantTime">
+      <path value="WoundAssessmentModel.relevantTime"/>
+      <short value="The time that the assessment addresses"/>
+      <definition value="TBD"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+      </type>
+    </element>
     <element id="WoundAssessmentModel.overallInterpretation">
       <path value="WoundAssessmentModel.overallInterpretation"/>
       <short value="Overall assessement"/>
@@ -50,15 +61,247 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation"/>
       </binding>
     </element>
-    <element id="WoundAssessmentModel.relevantTime">
-      <path value="WoundAssessmentModel.relevantTime"/>
-      <short value="The time that the assessment addresses"/>
-      <definition value="TBD"/>
-      <min value="1"/>
+    <element id="WoundAssessmentModel.extentOfTissueLoss">
+      <path value="WoundAssessmentModel.extentOfTissueLoss"/>
+      <short value="The extent of tissue loss from the wound"/>
+      <definition value="The extent of tissue loss as represented by formal grading in the case of pressure injuries."/>
+      <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="dateTime"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="example"/>
+        <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/pressure-injury-classification-demo"/>
+      </binding>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics">
+      <path value="WoundAssessmentModel.woundBedCharacteristics"/>
+      <short value="Characteristics of the wound bed"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.generalClinialAppearance">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.generalClinialAppearance"/>
+      <short value="The general clinial appearance of the wound; such as excoriation, maceration, necrosis, eschar or slough"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.size">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.size"/>
+      <short value="Dimensions of the wound"/>
+      <definition value="Length by width by depth, circumference, diameter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.colour">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.colour"/>
+      <short value="The colour of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.oedema">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.oedema"/>
+      <short value="The nature of oedema from the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.temperature">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.temperature"/>
+      <short value="The temperature of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.exudate">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.exudate"/>
+      <short value="The exudate from the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.odour">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.odour"/>
+      <short value="The odour of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.woundBedCharacteristics.infection">
+      <path value="WoundAssessmentModel.woundBedCharacteristics.infection"/>
+      <short value="The presence and nature of any infection related to the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.periWoundCharacteristics">
+      <path value="WoundAssessmentModel.periWoundCharacteristics"/>
+      <short value="Characteristics of the tissues surrounding the wound bed (ie periwound)"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.periWoundCharacteristics.generalClinialAppearance">
+      <path value="WoundAssessmentModel.periWoundCharacteristics.generalClinialAppearance"/>
+      <short value="The general clinial appearance of the tissues surrounding the wound; such as excoriation, maceration etc"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.periWoundCharacteristics.tunnelling">
+      <path value="WoundAssessmentModel.periWoundCharacteristics.tunnelling"/>
+      <short value="Presence of tunnelling from the wound into the surrounding tissue"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.periWoundCharacteristics.undermining">
+      <path value="WoundAssessmentModel.periWoundCharacteristics.undermining"/>
+      <short value="Presence of undermining from the wound into the surrounding tissue"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.healing">
+      <path value="WoundAssessmentModel.healing"/>
+      <short value="Characteristics of the wound related to how it is healing"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.healing.granulation">
+      <path value="WoundAssessmentModel.healing.granulation"/>
+      <short value="Granulation of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.healing.epithelialisation">
+      <path value="WoundAssessmentModel.healing.epithelialisation"/>
+      <short value="Epithelialisation of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.alterationOfSensation">
+      <path value="WoundAssessmentModel.alterationOfSensation"/>
+      <short value="Alteration of sensation related to the wound; e.g. pain or numbness etc"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.alterationOfSensation.pain">
+      <path value="WoundAssessmentModel.alterationOfSensation.pain"/>
+      <short value="Pain associated with the wound"/>
+      <definition value="Characteristics of pain associated with the wound, such as intensity, nature (throbbing, burning, dull etc), location(s) and behahavior."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.alterationOfSensation.otherSensoryChanges">
+      <path value="WoundAssessmentModel.alterationOfSensation.otherSensoryChanges"/>
+      <short value="Other sensory changes associated with the wound"/>
+      <definition value="Characteristics of non-pain sensory changes associated with the wound, such as numbness, tingling, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.foreignBody">
+      <path value="WoundAssessmentModel.foreignBody"/>
+      <short value="The presence and description of a foreign body, including type, size and location"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.image">
+      <path value="WoundAssessmentModel.image"/>
+      <short value="Image(s) taken of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
       </type>
     </element>
   </differential>
