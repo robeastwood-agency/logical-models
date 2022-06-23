@@ -35,15 +35,155 @@
         <code value="Element"/>
       </type>
     </element>
-    <element id="WoundManagementModel.relevantTime">
-      <path value="WoundManagementModel.relevantTime"/>
-      <short value="The time that the assessment addresses"/>
+    <element id="WoundManagementModel.supportiveCare">
+      <path value="WoundManagementModel.supportiveCare"/>
+      <short value="Supportive care approaches"/>
       <definition value="TBD"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="dateTime"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.supportiveCare.positioning">
+      <path value="WoundManagementModel.supportiveCare.positioning"/>
+      <short value="Approaches to mananging the wound by positioning of the patient or the limb"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.supportiveCare.hygiene">
+      <path value="WoundManagementModel.supportiveCare.hygiene"/>
+      <short value="Approaches to mananging the wound using skin and wound hygiene techniques"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.supportiveCare.supportiveAppliances">
+      <path value="WoundManagementModel.supportiveCare.supportiveAppliances"/>
+      <short value="Approaches to mananging the wound using supportive appliances, such as pressure cushions, or splints etc"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.supportiveCare.mobilisation">
+      <path value="WoundManagementModel.supportiveCare.mobilisation"/>
+      <short value="Approaches to improve a patient's mobility"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.nonSurgical">
+      <path value="WoundManagementModel.nonSurgical"/>
+      <short value="Non-surgical clinical approaches"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.nonSurgical.woundDressing">
+      <path value="WoundManagementModel.nonSurgical.woundDressing"/>
+      <short value="Application of specialised wound dressings, that may include topical anti-microbial agents"/>
+      <definition value="Application of specialised dressings to create an environment that is conducive to healing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.nonSurgical.painControl">
+      <path value="WoundManagementModel.nonSurgical.painControl"/>
+      <short value="Techniques to manage a patient's pain experience"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.nonSurgical.systemicAntimicrobialTherapy">
+      <path value="WoundManagementModel.nonSurgical.systemicAntimicrobialTherapy"/>
+      <short value="Management of wound infections using systemic medications"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.nonSurgical.nutritionalSupplements">
+      <path value="WoundManagementModel.nonSurgical.nutritionalSupplements"/>
+      <short value="Support of wound healing with nutritional supplements"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.surgical">
+      <path value="WoundManagementModel.surgical"/>
+      <short value="Surgical procedures"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.surgical.debridement">
+      <path value="WoundManagementModel.surgical.debridement"/>
+      <short value="Debridement of the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.surgical.surgicalRepair">
+      <path value="WoundManagementModel.surgical.surgicalRepair"/>
+      <short value="Surgical procedures to promote repair of the wound; includes skin grafts or flaps"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundManagementModel.electrotherapy">
+      <path value="WoundManagementModel.electrotherapy"/>
+      <short value="Electrotherapy procedures that may be used to manage the wound"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
       </type>
     </element>
   </differential>
