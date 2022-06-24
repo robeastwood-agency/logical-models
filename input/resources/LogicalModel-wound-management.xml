@@ -178,7 +178,7 @@
     <element id="WoundManagementModel.electrotherapy">
       <path value="WoundManagementModel.electrotherapy"/>
       <short value="Electrotherapy procedures that may be used to manage the wound"/>
-      <definition value="TBD"/>
+      <definition value="Electrotherapy procedures that may be used to promote wound healing. Examples include pulsed electromagnetic therapy, ultraviolet light therapy, transcutaneous electrical nerve stimulation (TENS) or therapeutic ultrasound (US)."/>
       <min value="0"/>
       <max value="1"/>
       <type>
