@@ -22,7 +22,6 @@
     <identity value="FHIR"/>
     <uri value="http://fhir.hl7.org"/>
     <name value="Fast Health Interoperability Resources"/>
-    <comment value="Path to where in a FHIR Resource the data element is found"/>
   </mapping>
   <kind value="logical"/>
   <abstract value="false"/>
@@ -42,7 +41,8 @@
       <mustSupport value="true"/>
       <mapping>
         <identity value="FHIR"/>
-        <map value="Condition"/>
+        <map value="Condition (as Wound Condition profile)"/>
+        <comment value="TBD"/>
       </mapping>
     </element>
     <element id="WoundConditionModel.subject">
