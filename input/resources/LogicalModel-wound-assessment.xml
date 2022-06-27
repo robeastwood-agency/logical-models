@@ -68,6 +68,16 @@
       <min value="0"/>
       <max value="1"/>
       <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.extentOfTissueLoss.pressureInjury">
+      <path value="WoundAssessmentModel.extentOfTissueLoss.pressureInjury"/>
+      <short value="The extent of tissue loss from a pressure injury, typically using a standardised pressure injury grading system"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
         <code value="CodeableConcept"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
       </type>
@@ -76,6 +86,28 @@
         <strength value="example"/>
         <valueSet value="http://ns.electronichealth.net.au/fhir/ValueSet/pressure-injury-classification-demo"/>
       </binding>
+    </element>
+    <element id="WoundAssessmentModel.extentOfTissueLoss.burn">
+      <path value="WoundAssessmentModel.extentOfTissueLoss.burn"/>
+      <short value="The extent of tissue loss from a burn. Potential terminology includes a depth classification, by percentage or overall"/>
+      <definition value="TBD"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
+    </element>
+    <element id="WoundAssessmentModel.extentOfTissueLoss.skintear">
+      <path value="WoundAssessmentModel.extentOfTissueLoss.skintear"/>
+      <short value="The extent of tissue loss from a skintear. Potential terminology includes the STAR Skin Tear Classification System"/>
+      <definition value="The extent of tissue loss as represented by formal grading in the case of pressure injuries."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+      </type>
     </element>
     <element id="WoundAssessmentModel.woundBedCharacteristics">
       <path value="WoundAssessmentModel.woundBedCharacteristics"/>
